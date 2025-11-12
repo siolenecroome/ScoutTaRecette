@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Combien êtes-vous ?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e00c0c;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 40px;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        td input {
+            width: 80px;
+            padding: 5px;
+            font-size: 1em;
+        }
+        button {
+            background-color: #e44747;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+        button:hover {
+            background-color: #e00c0c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ScoutTaRecette</h1>
+    </header>
+
+    <h2>Combien êtes-vous ?</h2>
+
+    <form action="/submit" method="post">
+        <input type="hidden" name="recette" value="{{ recette }}">
+
+        <table>
+            <tr>
+                <td>Orange</td>
+                <td><input type="number" name="orange" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Bleu fille</td>
+                <td><input type="number" name="bleu_fille" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Bleu garçon</td>
+                <td><input type="number" name="bleu_garcon" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Rouge fille</td>
+                <td><input type="number" name="rouge_fille" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Rouge garçon</td>
+                <td><input type="number" name="rouge_garcon" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Cheffe</td>
+                <td><input type="number" name="cheffe" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Chef</td>
+                <td><input type="number" name="chef" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Maxi gros mangeur</td>
+                <td><input type="number" name="maxi_gros_mangeur" min="0" value="0"></td>
+            </tr>
+        </table>
+
+        <button type="submit">Valider</button>
+    </form>
+</body>
+</html>
