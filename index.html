@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ScoutTaRecette</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e00c0c;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        .intro {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .recette-liste {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .recette-liste a {
+            text-decoration: none;
+        }
+        .recette-liste button {
+            background-color: #e44747;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .recette-liste button:hover {
+            background-color: #31b147;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ScoutTaRecette</h1>
+    </header>
+    <main>
+        <p class="intro">Bienvenue sur <strong>ScoutTaRecette</strong>, une plateforme qui te permet de préparer tes repas en quelques clics !</p>
+        <div class="recette-liste">
+            <a href="/form?recette=Ratatouille semoule"><button>Ratatouille + semoule</button></a>
+            <a href="/form?recette=Riz poulet curry"><button>Riz poulet curry</button></a>
+            <a href="/form?recette=Spaghetti carbonara"><button>Spaghetti carbonara</button></a>
+            <a href="/form?recette=Pates aux legumes"><button>Pâtes aux légumes</button></a>
+            <a href="/form?recette=Risotto champignons"><button>Risotto champignons</button></a>
+        </div>
+    </main>
+</body>
+</html>
